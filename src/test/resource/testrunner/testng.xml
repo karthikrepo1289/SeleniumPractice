@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smokke Testing" thread-count="2" verbose="2" parallel="tests">
+
+	<test name="Google Test">
+		<parameter name="URL" value="https://www.google.com/"></parameter>
+		<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="mytests.GoogleSearchTest" />
+		</classes>
+	</test>
+
+	<test name="CRM Test">
+		<parameter name="URL" value="https://classic.freecrm.com/index.html"></parameter>
+		<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="mytests.CRMTest" />
+		</classes>
+
+	</test>
+
+</suite>
